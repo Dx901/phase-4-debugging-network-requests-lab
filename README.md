@@ -63,11 +63,17 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  The model name was in plural which made it wrong as model names should be singular
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  -It did not have any data being rendered. The error said that there was an unexpected end of json,
+  -To solove that ensure that the data that is being returned or rather rendered is json format
+
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+.There is no route in the action controller that matches delete
+Add it and we should be good to go
